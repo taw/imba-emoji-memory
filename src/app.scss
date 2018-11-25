@@ -1,0 +1,50 @@
+@import 'normalize-scss';
+@include normalize();
+
+.App {
+  header {
+    font-size: 64px;
+    text-align: center;
+  }
+
+  .button_bar {
+    text-align: center;
+
+    button {
+      margin: 5px;
+    }
+  }
+
+  .game {
+    display: grid;
+    margin: auto;
+
+    &.size-2 {
+      grid-template-columns: repeat(2, 1fr);
+      width: 100px;
+    }
+    &.size-4 {
+      grid-template-columns: repeat(4, 1fr);
+      width: 200px;
+    }
+    &.size-6 {
+      grid-template-columns: repeat(6, 1fr);
+      width: 300px;
+    }
+  }
+
+  .tile {
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    font-size: 30px;
+    border: 3px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.hidden {
+      background-color: #aaa;
+    }
+  }
+}
