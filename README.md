@@ -1,6 +1,6 @@
 # imba-emoji-memory
 
-Emoji Memory Game in Imba.
+Emoji Memory Game in Imba. [You can see in in action here](https://taw.github.io/imba-emoji-memory).
 
 ## Install dependencies
 
